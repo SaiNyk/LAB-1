@@ -1,0 +1,20 @@
+<html> 
+<head> 
+<title>abc</title> 
+</head> 
+<body bgcolor="white" text="purple"> 
+<h1 align="center"><u>food items</u></h1> 
+<h2>Veg:</h2> 
+<ul type="square"> 
+<li>Chilly Mushroom 
+<li>Paneer Masala 
+<li>Veg Korma 
+</ul> 
+<h2>Non-veg:</h2> 
+<ol type="1" start="4"> 
+<li>Chilly Chicken 
+<li>Egg Masala 
+<li>Mutton Curry 
+</ol> 
+</body> 
+</html> 

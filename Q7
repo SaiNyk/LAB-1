@@ -1,0 +1,13 @@
+<html> 
+<head> 
+<title>abc</title> 
+</head> 
+<frameset rows="30%,40%,*"> 
+<frame src="Lion.jpg"> 
+<frameset rows="50%,*"> 
+<frame src="Panthera tigris.jpg"> 
+<frame src="Elephant.jpg"> 
+</frameset> 
+<frame src="Polarbear.jpg"> 
+</frameset> 
+</html>
