@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Featured Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 23%;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card button {
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Featured Products</h2>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://images.vegnonveg.com/resized/1020X1200/13826/new-balance-740-grey-matter-68a83d7d5afac.jpg?format=webp" alt="Product 1">
+            <h3>New Balance 740</h3>
+            <p class="price">Rs 11,199</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw92b9377c/images/Titan/Catalog/1688KM06_1.jpg?sw=600&sh=600" alt="Product 2">
+            <h3>Titan Regalia</h3>
+            <p class="price">Rs. 9836</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://sunglassic.com/cdn/shop/files/OPERA.SilverBlackRectangleSunglasses_4__compressed.jpg?v=1699335144&width=2048" alt="Product 3">
+            <h3>Silver Black Sunglasses</h3>
+            <p class="price">Rs. 1999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://hatstore.imgix.net/4063633186318_1.jpg" alt="Product 4">
+            <h3>Stetson Cap</h3>
+            <p class="price">Rs. 2499</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>
