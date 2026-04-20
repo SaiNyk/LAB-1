@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Q3</title>
+		<script>
+			function abc()
+			{
+				var a=document.getElementById("x").value;
+				if(a=="red")
+				document.bgColor="red";
+				else if(a=="green")
+				document.bgColor="green";
+				else if(a=="blue")
+				document.bgColor="blue";
+			}			
+		</script>
+	</head>
+	<body>
+		<select id="x" onchange="abc()">
+			<option value="none">none</option>
+			<option value="red">red</option>
+			<option value="green">green</option>
+			<option value="blue">blue</option>
+		</select>
+	</body>
+</html>

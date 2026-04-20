@@ -1,0 +1,34 @@
+<html> 
+<head> 
+<title>JSCalc</title> 
+<script language="JavaScript"> 
+let a=parseInt(prompt("Enter first number:"));
+let b=parseInt(prompt("Enter second number:"));
+var c;
+let choice=(prompt("Enter an operation:")); 
+switch(choice) 
+{ 
+case '+': 
+c=a+b; 
+break;
+case '-': 
+c=a-b; 
+break; 
+case '*': 
+c=a*b; 
+break; 
+case '/': 
+c=a/b; 
+break; 
+case '%': 
+c=a%b; 
+break; 
+default: 
+document.write("Wrong choice"); 
+} 
+document.write("Calculated value:"+c); 
+</script> 
+</head> 
+<body bgcolor="white" text="brown"> 
+</body> 
+</html> 

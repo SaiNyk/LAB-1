@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>Q4</title>
+</head>
+<body>
+  <h2 id="counter">0</h2>
+
+  <button onclick="increase()">+</button>
+  <button onclick="decrease()">-</button>
+
+  <script>
+    let count = 0;
+    function increase() {
+      count++;
+      document.getElementById("counter").innerHTML = count;
+    }
+
+    function decrease() {
+      if (count > 0) {
+        count--;
+        document.getElementById("counter").innerHTML = count;
+      }
+    }
+  </script>
+</body>
+</html>

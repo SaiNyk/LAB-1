@@ -1,0 +1,80 @@
+<html>
+<head>
+<title>Q6</title>
+</head>
+
+<body>
+
+<h2>Currency Converter</h2>
+
+From:
+<select id="from">
+<option value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+<option value="INR">INR</option>
+<option value="AUD">AUD</option>
+</select>
+
+<br><br>
+
+Amount:
+<input type="number" id="amount">
+
+<br><br>
+
+To:
+<select id="to">
+<option value="USD">USD</option>
+<option value="EUR">EUR</option>
+<option value="GBP">GBP</option>
+<option value="INR">INR</option>
+<option value="AUD">AUD</option>
+</select>
+
+<br><br>
+
+Result:
+<input type="text" id="result" readonly>
+
+<br><br>
+
+<button onclick="convert()">Convert</button>
+
+<script>
+
+var conversionRates = {
+USD: {EUR:0.93, GBP:0.82, INR:82.74, AUD:1.47},
+EUR: {USD:1.08, GBP:0.88, INR:89.06, AUD:1.58},
+GBP: {USD:1.22, EUR:1.14, INR:101.5, AUD:1.80},
+INR: {USD:0.012, EUR:0.011, GBP:0.0098, AUD:0.018},
+AUD: {USD:0.68, EUR:0.63, GBP:0.55, INR:55.87}
+};
+
+function convert(){
+
+var from = document.getElementById("from").value;
+var to = document.getElementById("to").value;
+var amount = document.getElementById("amount").value;
+
+if(amount == ""){
+alert("Please enter amount");
+return;
+}
+
+if(from == to){
+alert("From and To currencies cannot be same");
+return;
+}
+
+var rate = conversionRates[from][to];
+var result = amount * rate;
+
+document.getElementById("result").value = result.toFixed(2);
+
+}
+
+</script>
+
+</body>
+</html>

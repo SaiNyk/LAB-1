@@ -1,0 +1,40 @@
+<html>
+<head>
+  <title>Q5</title>
+</head>
+<body>
+  <input type="number" id="numInput" placeholder="Enter a number">
+  <button onclick="checkPrime()">Check Prime</button>
+  <p id="result"></p>
+  <script>
+    function checkPrime() {
+      const num = parseInt(document.getElementById("numInput").value);
+      const result = document.getElementById("result");
+
+      if (isNaN(num) || num < 1) {
+        result.innerHTML = "Please enter a positive integer.";
+        return;
+      }
+
+      if (num === 1) {
+        result.innerHTML = "1 is not a prime number.";
+        return;
+      }
+
+      let isPrime = true;
+      for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) {
+          isPrime = false;
+          break;
+        }
+      }
+
+      if (isPrime) {
+        result.innerHTML = num + " is a prime number.";
+      } else {
+        result.innerHTML = num + " is not a prime number.";
+      }
+    }
+  </script>
+</body>
+</html>

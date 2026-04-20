@@ -1,0 +1,15 @@
+<html> 
+<head> 
+<title>array</title> 
+<script language="JavaScript"> 
+function addition(a,b) 
+{ 
+c=a+b; 
+return(c); 
+} 
+document.write("Addition value="+addition(5,4)); 
+</script> 
+</head> 
+<body bgcolor="white" text="blue"> 
+</body> 
+</html> 
