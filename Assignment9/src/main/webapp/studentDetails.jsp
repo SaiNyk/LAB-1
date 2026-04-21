@@ -10,7 +10,7 @@
         String id = request.getParameter("id");
         try {
             Class.forName("org.postgresql.Driver");
-            Connection con = DriverManager.getConnection("jdbc:postgresql://192.168.1.17/cse_db24", "24bcsa09", "24bcsa09");
+            Connection con = DriverManager.getConnection("jdbc:postgresql://192.168.1.17/cse_db24", "24bcsi36", "24bcsi36");
             PreparedStatement ps = con.prepareStatement("SELECT * FROM student01 WHERE id=?");
             ps.setInt(1, Integer.parseInt(id));
             ResultSet rs = ps.executeQuery();
