@@ -16,7 +16,7 @@
         PreparedStatement ps = con.prepareStatement("DELETE FROM student01 WHERE id=?");
         ps.setInt(1, Integer.parseInt(id));
         ps.executeUpdate();
-        con.close()
+        con.close();
         response.sendRedirect("displayStudents.jsp");
     } catch(Exception e) { out.print(e); }
 %>
