@@ -11,7 +11,7 @@
         if(request.getMethod().equalsIgnoreCase("POST")){
             try {
                 Class.forName("org.postgresql.Driver");
-                Connection con = DriverManager.getConnection("jdbc:postgresql://192.168.1.17/cse_db24", "24bcsa09", "24bcsa09");
+                Connection con = DriverManager.getConnection("jdbc:postgresql://192.168.1.17/cse_db24", "24bcsi36", "24bcsi36");
                 PreparedStatement ps = con.prepareStatement("UPDATE student01 SET name=?, email=?, course=?, age=?, cgpa=? WHERE id=?");
                 ps.setString(1, request.getParameter("name"));
                 ps.setString(2, request.getParameter("email"));
